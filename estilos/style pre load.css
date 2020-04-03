@@ -884,6 +884,10 @@ body {
 
 /************New PreLoader*****************/
 
+@font-face{
+	font-family:locc;
+	src: url("../Mf Queen Leela.ttf")
+}
 #pre-load {
    background: #1C1C1C;
   overflow-y: hidden !important;
@@ -894,12 +898,15 @@ body {
 z-index: 999;
 margin-top: 0px;
 top: 0px;
+	font-family:locc;
+	
 }
 
 .preloader {
   overflow: hidden !important;
   position: absoulte;
   top: 0;
+	font-family:locc;
 }
 
 .preloader:before, .preloader:after {
