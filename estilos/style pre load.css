@@ -885,7 +885,7 @@ body {
 /************New PreLoader*****************/
 
 @font-face{
-	font-family:locc;
+	font-family:letra logo;
 	src: url("../Mf Queen Leela.ttf")
 }
 #pre-load {
@@ -898,7 +898,7 @@ body {
 z-index: 999;
 margin-top: 0px;
 top: 0px;
-	font-family:locc;
+	font-family:letra logo;
 	
 }
 
@@ -906,7 +906,7 @@ top: 0px;
   overflow: hidden !important;
   position: absoulte;
   top: 0;
-	font-family:locc;
+	font-family:letra logo;
 }
 
 .preloader:before, .preloader:after {
@@ -991,6 +991,7 @@ top: 0px;
   animation: dash 5s linear alternate;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
+	font-family:letra logo;
 }
 @keyframes dash {
   to {
