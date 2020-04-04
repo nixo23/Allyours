@@ -1,4 +1,5 @@
 
+
 var slideWrapper = $(".main-slider"),
     iframes = slideWrapper.find('.embed-player'),
     lazyImages = slideWrapper.find('.slide-image'),
@@ -143,7 +144,7 @@ $(window).on("resize.slickVideoPlayer", function(){
   resizePlayer(iframes, 16/9);
 });
 
-$('body').toggleClass('loaded');
+
 
 
 
@@ -192,3 +193,12 @@ $(document).ready(function(){
     
   });
 });
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function() {
+    setTimeout(function() {    document.getElementById("pre-load").className = "swipeIn";
+    }, 4600);
+  },
+  false
+);
