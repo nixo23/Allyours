@@ -811,19 +811,19 @@ top: 0px;
   position: absolute;
   top: 0px;
   left: 0;
-  height: 2px;
+  height: 6px;
   content: "";
 }
 
 .preloader:before {
   width: 100%;
-  background-color: #;
+  background-color: #CF7133;
   
 }
 
 .preloader:after {
   width: 0px;
-  background-color: #2fd6a7;
+  background-color: #9CAA2D;
   animation-delay: 0s !important;
 -webkit-animation: load-in 4s ease-in-out;
 }
@@ -860,13 +860,13 @@ top: 0px;
   stroke: 1; 
 }
 #logo {
-  width: 300px;
-  height: 300px;
+  width: 700px;
+  height: 700px;
   position: absolute;
   top: 0; right: -25%; bottom: 0; left: -25%;
   margin: auto;
   display:block; 
-  stroke: #2fd6a7;
+  stroke:  #2fd6a7;
   fill: #2fd6a7;
   stroke-miterlimit: 5;
   animation: FillIn 3s linear;
@@ -894,7 +894,7 @@ top: 0px;
   to {
     stroke-dashoffset: 1;
     /* works, know why */
-    fill: #2fd6a7;
+    fill: #A4A4B2;
 
   }
 }
