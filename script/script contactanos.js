@@ -22,7 +22,3 @@ document.addEventListener(
   },
   false
 );
-
-$(function(){
-  $("a").attr("target","_blank");
-});
