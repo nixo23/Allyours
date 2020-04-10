@@ -1,5 +1,5 @@
 @font-face {
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf");
+  src: url("../bibliofrafias/magic dafont.otf");
   font-family: 'Polar';
 }
 *, *:before, *:after {
@@ -122,7 +122,7 @@ svg {
 }
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("llaveros.jpeg");
+  background-image: url("../imagenes/llaveros.svg");
 }
 .slide:nth-child(1) .slide__overlay-path {
   fill: #D78A4C;
@@ -137,7 +137,7 @@ svg {
 }
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url("../../../Allyours/Allyours/imagenes/camisetas.jpg");
+  background-image: url("../imagenes/libretas.svg");
 }
 .slide:nth-child(2) .slide__overlay-path {
   fill: #F4AE49;
@@ -152,7 +152,7 @@ svg {
 }
 .slide:nth-child(3) .slide__bg {
   left: -100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-1.jpg");
+  background-image: url("../imagenes/camisetas.svg");
 }
 .slide:nth-child(3) .slide__overlay-path {
   fill: #D78A4C;
@@ -167,7 +167,7 @@ svg {
 }
 .slide:nth-child(4) .slide__bg {
   left: -150%;
-  background-image: url("../../../Allyours documentos/logo renovado 1.svg");
+  background-image: url("../imagenes/logo renovado.svg");
 }
 .slide:nth-child(4) .slide__overlay-path {
   fill: #F4AE49;
