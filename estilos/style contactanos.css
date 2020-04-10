@@ -12,7 +12,7 @@ body {
   height: 100%;
 }
 .bgimg {
-	  background-image: url("../../../Allyours/Allyours/imagenes/fondo.svg");
+	  background-image: url("../imagenes/fondo.svg");
 	
     background-repeat: no-repeat;
     background-size: cover;
@@ -433,4 +433,179 @@ body {
   -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
 	
+}
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  top: 0px;
+  left: 0px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/************New PreLoader*****************/
+
+#pre-load {
+   background: #1c1c1c;
+  overflow-y: hidden !important;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+z-index: 999;
+margin-top: 0px;
+top: 0px;
+
+}
+
+.preloader {
+  overflow: hidden !important;
+  position: absoulte;
+  top: 0;
+}
+
+.preloader:before, .preloader:after {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 6px;
+  content: "";
+}
+
+.preloader:before {
+  width: 100%;
+  background-color: #E6B539;
+  
+}
+
+.preloader:after {
+  width: 0px;
+  background-color: #9CAA2D;
+  animation-delay: 0s !important;
+-webkit-animation: load-in 4s ease-in-out;
+}
+
+@-webkit-keyframes loadingAnim {
+  0% {width: 0%;}
+  50% {width: 50%;}
+  100% {width: 100%;}
+}
+
+@keyframes load-in {
+  0% {
+    width:0;
+  }
+  33%{
+    width:100%;
+  }
+  36%{
+    transform: translateX(0);
+    width:100%;
+    transform-origin: right;
+  }
+  100%{
+    transform: translateX(100%);
+    transform-origin: right;
+  }
+}
+/*****************************/
+
+#Layer_1 {
+  animation: dash 5s ease-in-out; 
+}
+.path {
+  stroke: 1; 
+}
+#logo {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0; right: -25%; bottom: 0; left: -25%;
+  margin: auto;
+  display:block; 
+  fill: #fff;
+  stroke-miterlimit: 5;
+  animation: FillIn 3s linear;
+  z-index: 2;
+ 
+}
+
+#logo:hover {
+  animation: pulse 2s ease-in-out;
+    transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+
+#text {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1;
+    /* works, know why */
+    fill: #2fd6a7;
+
+  }
+}
+.dash {
+  animation-name: dash;
+  fill-opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration: 1;
+  animation-duration: 4s;
+  animation-delay: 0s;
+   -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes FillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
+}
+/******Hero Section**********/
+
+/*....Swipe......*/
+.swipeIn {
+ animation: swipeIn;
+  -webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(.81,.15,.26,.99);
+	animation-timing-function: cubic-bezier(.81,.15,.26,.99);
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+  
+  
+}
+@keyframes swipeIn {
+	0% {
+		transform: translateX(-100%);
+	}
+	50% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+#hero {
+  overflow: auto;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
