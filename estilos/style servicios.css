@@ -11,12 +11,12 @@ body {
   color: #efefef;
   text-align: center;
 }
-body a, body a:visited {
-  color: #efefef;
+body a, body a:enabled{
+  color: #000000;
   text-decoration: none;
 }
 body a:hover {
-  color: #fff;
+  color: #9CAA2D;
 }
 
 .slick-slide, .slick-slide::before, .caption {
@@ -209,12 +209,12 @@ header nav ul li a:hover {
 }
 
 .container {
-  background-color: #f2f2f2;
+  background-image: url("../imagenes/10730.jpg");
   color: #444;
 	
   width: 100%;
-	MAX-height: 90%;
-	max-height: 165%;
+	MAX-height: 100%;
+	max-height: 180%;
   line-height: 1.6;
   padding: 40px 0;
 }
@@ -637,11 +637,7 @@ div.card {
     }
   }
 
-  div.card-description {
-    padding: 0 15px 10px;
-    position: relative;
-    font-size: 14px;
-  }
+  
 
   div.card-actions {
   	box-shadow: 0 2px 0px 0 rgba(0,0,0,0.075);
